@@ -22,9 +22,9 @@ For testing convenience, I chose to reorder words alphabetically.
 - nonLatin.txt: few sentences using non-Latin chars.
 - performanceBenchmark.txt: a large file of 11.6 MB used to roughly compare performances between the Scala and C# implementations.
 
-A note on regex discrepancy, I tried different regex expression in Scala to find one that can effectively match nonLatin chars, as it's happening for C#, and succefully pass nonLatin.txt test. The words are correctly split but only nonLatin chars are changed into ã or â. 
+A note on regex discrepancy, I tried different regex expression in Scala to find one that can effectively match non-Latin chars, as it's happening for C#, and succefully pass nonLatin.txt test. The words are correctly split but only non-Latin chars are changed into ã or â. 
 
 ## Time and Space complexity:
 Given n as the total number of words:
 - Time Complexity: O(nlog(n)). The main time-consuming operation is the sorting of the word counts in alphabetical order.
-- Space Complexity: O(n). This is because the program stores each word and its count. 
+- Space Complexity: O(n). Main memory usage occurs for each word and its count storage.
