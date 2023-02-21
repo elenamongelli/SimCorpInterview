@@ -5,9 +5,9 @@ Finally, both are printing the sorted word counts as well as execution time and 
 
 ## How to use:
 
-In the terminal, navigate to the correct directory and run the following command:
-    For C#: .\WordCounter.exe
-    For Scala: scala WordCounter.scala
+In a terminal, navigate to the correct directory and run:
+- For C#: .\WordCounter.exe
+- For Scala: scala WordCounter.scala
 
 ## Key assumptions made:
 
