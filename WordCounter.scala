@@ -22,7 +22,7 @@ object WordCounter {
 
   def countWords(lines: Iterator[String]): SortedMap[String, Int] = {
     val delimiters = Array(' ','\n', '\t')
-    val regex = new Regex("\\P{L}")
+    val regex = new Regex("\\W+")
 
     lines.flatMap(line => line.split(delimiters))
          .map(word => regex.replaceAllIn(word.toLowerCase(), ""))
